@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.ico"><title>Trunip起始页-父亲节</title><link href="static/css/app.d51f2544.css" rel="preload" as="style"><link href="static/css/chunk-vendors.dd0ab63f.css" rel="preload" as="style"><link href="static/js/app.bb921946.js" rel="preload" as="script"><link href="static/js/chunk-vendors.559ded94.js" rel="preload" as="script"><link href="static/css/chunk-vendors.dd0ab63f.css" rel="stylesheet"><link href="static/css/app.d51f2544.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but m_myapp doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="static/js/chunk-vendors.559ded94.js"></script><script src="static/js/app.bb921946.js"></script></body></html><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script><script>let i = 0
+  setInterval(() => {
+    if (i % 10 == 0) {
+      axios
+        .post('http://turnip.ren/Yu', {
+          code: 10,
+        })
+        .then(function (response) {
+          if (response.data == '3') {
+            console.log('唐伟康正在看着你')
+          }
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    }
+    i++
+  }, 1000)</script>

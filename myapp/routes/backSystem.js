@@ -4,7 +4,7 @@ const parser = require("ua-parser-js");
 let fs = require("fs");
 //open回调函数的参数fd是文件地址
 
-let key = ["turnip", "yu", "kang"];
+let key = ["turnip", "kang"];
 // mysql数据库
 let SQL_option = {
   host: "localhost",

@@ -177,11 +177,7 @@ router.post("/", async (ctx, next) => {
     ctx.body = 0;
   }
 });
-let y = 0;
-router.get("/yu", async (ctx, next) => {
-  console.log(y++);
-  await ctx.render("main.hbs");
-});
+
 //友情链接
 router.get("/friend", async (ctx, next) => {
   let strSQL = `select t_name,t_link,t_describe,t_default from t_friend;`;
